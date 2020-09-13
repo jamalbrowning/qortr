@@ -1,0 +1,11 @@
+{
+    "firebaseConfig" : {
+      "apiKey": "AIzaSyB6jBrVRAPksafzAMvi3wN-72DKXNIEGAE",
+      "authDomain": "qortr-3137c.firebaseapp.com",
+      "databaseURL": "https://qortr-3137c.firebaseio.com",
+      "projectId": "qortr-3137c",
+      "storageBucket": "qortr-3137c.appspot.com",
+      "messagingSenderId": "326311029363",
+      "appId": "1:326311029363:web:4dfe22ff0846d00bc9d806"
+  }
+}
