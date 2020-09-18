@@ -26,6 +26,12 @@ class MyNavbar extends React.Component {
     isOpen: false,
   }
 
+  loginClickEvent = (e) => {
+    e.preventDefault();
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider);
+  }
+
   logMeOut = (e) => {
     e.preventDefault();
     firebase.auth().signOut();
@@ -51,6 +57,9 @@ class MyNavbar extends React.Component {
               <NavLink tag={RRNavLink} to="/dates">Dates</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink tag={RRNavLink} to="/new">Create</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink tag={RRNavLink} to="/Contact">Contact Us</NavLink>
             </NavItem>
             <NavItem>
@@ -65,10 +74,11 @@ class MyNavbar extends React.Component {
       }
 
       return <Nav className="ml-auto" navbar>
-        <NavItem>
-              <NavLink tag={RRNavLink} to="/Contact">Contact Us</NavLink>
-            </NavItem>
-      </Nav>;
+                <NavItem>
+                  <NavLink tag={RRNavLink} to="/Contact">Contact Us</NavLink>
+                </NavItem>
+                <button className=" login btn btn-info" onClick={this.loginClickEvent}>Google login</button>
+              </Nav>;
     };
 
     return (
