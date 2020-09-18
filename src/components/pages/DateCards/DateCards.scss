@@ -1,0 +1,17 @@
+.DateCard{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.dateCard{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 10px auto;
+  img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+  }
+}

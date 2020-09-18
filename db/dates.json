@@ -1,0 +1,30 @@
+{
+  "date1" : {
+    "dateId": 1,
+    "title": "Frisbee",
+    "imgUrl": "https://thelondonoxfordexpress.files.wordpress.com/2012/06/img_2250.jpg",
+    "description": "yada yada",
+    "dateFormat": "outdoor"
+  },
+  "date2" : {
+    "dateId": 2,
+    "title": "Frisbee",
+    "imgUrl": "https://thelondonoxfordexpress.files.wordpress.com/2012/06/img_2250.jpg",
+    "description": "yada yada",
+    "dateFormat": "outdoor"
+  },
+  "date3" : {
+    "dateId": 3,
+    "title": "Frisbee",
+    "imgUrl": "https://thelondonoxfordexpress.files.wordpress.com/2012/06/img_2250.jpg",
+    "description": "yada yada",
+    "dateFormat": "outdoor"
+  },
+  "date4" : {
+    "dateId": 4,
+    "title": "Frisbee",
+    "imgUrl": "https://thelondonoxfordexpress.files.wordpress.com/2012/06/img_2250.jpg",
+    "description": "yada yada",
+    "dateFormat": "outdoor"
+  }
+}

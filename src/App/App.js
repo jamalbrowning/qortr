@@ -17,7 +17,7 @@ import Contact from '../components/pages/Contact/Contact';
 import Dates from '../components/pages/Dates/Dates';
 import Landing from '../components/pages/Landing/Landing';
 import UserPage from '../components/pages/UserPage/UserPage';
-import Footer from '../components/pages/Footer/Footer';
+// import Footer from '../components/pages/Footer/Footer';
 
 fbConnection();
 
@@ -70,7 +70,7 @@ class App extends React.Component {
                 <Redirect from="*" to="/home" />
               </Switch>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
           </React.Fragment>
         </BrowserRouter>
       </div>
