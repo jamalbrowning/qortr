@@ -5,7 +5,7 @@ import apiKeys from '../apiKeys.json';
 const baseUrl = apiKeys.firebaseConfig.databaseURL;
 
 const getUserByUid = (uid) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/users.json?orderBy="uid&equalTo="${uid}`)
+  axios.get(`${baseUrl}/users.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => {
       const userData = response.data;
       const myUserData = [];
