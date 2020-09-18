@@ -14,6 +14,7 @@ import fbConnection from '../components/helpers/data/connection';
 import MyNavBar from '../components/pages/MyNavBar/MyNavBar';
 import Auth from '../components/pages/Auth/Auth';
 import Contact from '../components/pages/Contact/Contact';
+import NewDate from '../components/pages/NewDate/NewDate';
 import Dates from '../components/pages/Dates/Dates';
 import Landing from '../components/pages/Landing/Landing';
 import UserPage from '../components/pages/UserPage/UserPage';
@@ -63,6 +64,7 @@ class App extends React.Component {
             <div className="container">
               <Switch>
                 <PrivateRoute path="/home" component={Landing} authed={authed}/>
+                <PrivateRoute path="/new" component={NewDate} authed={authed}/>
                 <Route path="/contact" component={Contact}/>
                 <PrivateRoute path="/dates" component={Dates} authed={authed}/>
                 <PrivateRoute path="/profile" component={UserPage} authed={authed}/>

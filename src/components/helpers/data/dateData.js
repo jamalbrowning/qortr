@@ -18,4 +18,6 @@ const getDates = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getDates };
+const createDate = (newDate) => axios.post(`${baseUrl}/dates.json`, newDate);
+
+export default { getDates, createDate };
