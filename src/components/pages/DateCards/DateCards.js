@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
 
 import {
@@ -25,6 +27,7 @@ class DateCards extends React.Component {
 
   render() {
     const { date } = this.props;
+    const editLink = `/edit/${date.id}`;
 
     return (
       <div className="dateCard">
@@ -34,6 +37,7 @@ class DateCards extends React.Component {
           <CardTitle>{date.title}</CardTitle>
           <CardText>{date.dateFormat}</CardText>
           <CardText>{date.description}</CardText>
+          <Link to={editLink} className="btn btn-success m-3"><i className="fas fa-pencil-alt"></i></Link>
           <button className="btn btn-secondary m-3" onClick={this.deleteDateEvent}><i className="fas fa-trash-alt"></i></button>
         </CardBody>
       </Card>

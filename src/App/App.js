@@ -18,6 +18,7 @@ import NewDate from '../components/pages/NewDate/NewDate';
 import Dates from '../components/pages/Dates/Dates';
 import Landing from '../components/pages/Landing/Landing';
 import UserPage from '../components/pages/UserPage/UserPage';
+import EditDate from '../components/pages/Dates/EditDate/EditDate';
 // import Footer from '../components/pages/Footer/Footer';
 
 fbConnection();
@@ -65,6 +66,7 @@ class App extends React.Component {
               <Switch>
                 <PrivateRoute path="/home" component={Landing} authed={authed}/>
                 <PrivateRoute path="/new" component={NewDate} authed={authed}/>
+                <PrivateRoute path="/edit/:dateId" component={EditDate} authed={authed}/>
                 <Route path="/contact" component={Contact}/>
                 <PrivateRoute path="/dates" component={Dates} authed={authed}/>
                 <PrivateRoute path="/profile" component={UserPage} authed={authed}/>

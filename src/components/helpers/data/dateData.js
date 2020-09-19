@@ -22,8 +22,14 @@ const createDate = (newDate) => axios.post(`${baseUrl}/dates.json`, newDate);
 
 const deleteDate = (dateId) => axios.delete(`${baseUrl}/dates/${dateId}.json`);
 
+const updateDate = (dateId, updatedDate) => axios.put(`${baseUrl}/dates/${dateId}.json`, updatedDate);
+
+const getDateById = (dateId) => axios.get(`${baseUrl}/dates/${dateId}.json`);
+
 export default {
   getDates,
   createDate,
   deleteDate,
+  updateDate,
+  getDateById,
 };
