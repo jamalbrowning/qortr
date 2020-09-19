@@ -8,16 +8,28 @@ class Dates extends React.Component {
     dates: [],
   }
 
-  componentDidMount() {
+  getDates = () => {
     dateData.getDates()
       .then((dates) => this.setState({ dates }))
       .catch((err) => console.error('get dates broke', err));
   }
 
+  componentDidMount() {
+    this.getDates();
+  }
+
+  deleteDate = (dateId) => {
+    dateData.deleteDate(dateId)
+      .then(() => {
+        this.getDates();
+      })
+      .catch((err) => console.error('delete dates dint work', err));
+  }
+
   render() {
     const { dates } = this.state;
 
-    const dateCard = dates.map((date) => <DateCard key={date.id} date={date}/>);
+    const dateCard = dates.map((date) => <DateCard key={date.id} date={date} deleteDate={this.deleteDate}/>);
 
     return (
       <div className="UserPage">

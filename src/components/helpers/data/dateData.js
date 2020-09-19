@@ -20,4 +20,10 @@ const getDates = () => new Promise((resolve, reject) => {
 
 const createDate = (newDate) => axios.post(`${baseUrl}/dates.json`, newDate);
 
-export default { getDates, createDate };
+const deleteDate = (dateId) => axios.delete(`${baseUrl}/dates/${dateId}.json`);
+
+export default {
+  getDates,
+  createDate,
+  deleteDate,
+};
