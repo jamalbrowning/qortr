@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #707070 !important;
+  .brand{
+    color: #34FFC8;
+  }
+  .login{
+    background-color: #707070;
+    &:hover {
+      background-color: #34FFC8 !important;
+      color: white;
+  }
+
+}
+}

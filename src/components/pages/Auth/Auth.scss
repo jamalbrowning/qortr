@@ -1,3 +1,24 @@
+@import '../../../styles/variables';
+
 .Auth{
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white
+}
+.qortr{
+  font-size: 3rem ;
+}
+.generateBTN{
+  border-radius: 50px;
+  width: 150px;
+  background-color: $favColor;
+  border-color: $teal;
+  &:hover{
+    background-color:$teal;
+    color: black;
+  }
+
 }

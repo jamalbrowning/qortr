@@ -15,6 +15,8 @@ import {
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import './MyNavbar.scss';
+
 // import Footer from '../Footer/Footer';
 
 class MyNavbar extends React.Component {
@@ -77,20 +79,17 @@ class MyNavbar extends React.Component {
       }
 
       return <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to="/Contact">Contact Us</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={RRNavLink} to="/dateGen">Contact Us</NavLink>
-                </NavItem>
-                <button className=" login btn btn-info" onClick={this.loginClickEvent}>Google login</button>
+                {/* <NavItem>
+                  <NavLink tag={RRNavLink} to="/dateGen">Generate Your Date</NavLink>
+                </NavItem> */}
+                <button className=" login btn btn-sm" onClick={this.loginClickEvent}>Employee Login</button>
               </Nav>;
     };
 
     return (
       <div>
         <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">qortr.</NavbarBrand>
+        <NavbarBrand href="/" className="brand">qortr.</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={isOpen} navbar>
           { buildNavbar() }

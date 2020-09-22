@@ -32,13 +32,18 @@ class DateCards extends React.Component {
     return (
       <div className="dateCard" id={ date.dateId }>
       <Card>
-        <CardImg top width="100%" src={ date.imgUrl } alt="Card image cap" />
-        <CardBody>
-          <CardTitle>{date.title}</CardTitle>
-          <CardText>{date.dateFormat}</CardText>
-          <CardText>{date.description}</CardText>
+       <CardTitle className="cardTitle">{date.title}</CardTitle>
+       <CardImg top width="100%" src={ date.imgUrl } alt="Card image cap" />
+        <CardBody className="cardBody">
+          <p className="realFormat">How to Interact</p>
+          <CardText className="format">{date.dateFormat}</CardText>
+          <span className="line"></span>
+          <p className="realFormat">What to do</p>
+          <CardText className="description">{date.description}</CardText>
+          <div>
           <Link to={editLink} className="btn btn-success m-3"><i className="fas fa-pencil-alt"></i></Link>
-          <button className="btn btn-secondary m-3" onClick={this.deleteDateEvent}><i className="fas fa-trash-alt"></i></button>
+          <button className="btn btn-outline-danger m-3" onClick={this.deleteDateEvent}><i className="fas fa-trash-alt"></i></button>
+          </div>
         </CardBody>
       </Card>
     </div>
