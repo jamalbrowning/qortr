@@ -30,7 +30,7 @@ class DateCards extends React.Component {
     const editLink = `/edit/${date.id}`;
 
     return (
-      <div className="dateCard">
+      <div className="dateCard" id={ date.dateId }>
       <Card>
         <CardImg top width="100%" src={ date.imgUrl } alt="Card image cap" />
         <CardBody>

@@ -4,7 +4,7 @@ const dateShape = PropTypes.shape({
   dateId: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
-  desctiption: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   dateFormat: PropTypes.string.isRequired,
 });
 

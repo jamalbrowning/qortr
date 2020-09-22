@@ -26,10 +26,17 @@ const updateDate = (dateId, updatedDate) => axios.put(`${baseUrl}/dates/${dateId
 
 const getDateById = (dateId) => axios.get(`${baseUrl}/dates/${dateId}.json`);
 
+const randomDate = () => {
+  const allDates = getDates();
+  const randomDatePick = Math.floor(Math.random() * (allDates.length));
+  return allDates[randomDatePick];
+};
+
 export default {
   getDates,
   createDate,
   deleteDate,
   updateDate,
   getDateById,
+  randomDate,
 };
