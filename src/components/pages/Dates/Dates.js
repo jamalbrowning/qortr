@@ -32,7 +32,6 @@ class Dates extends React.Component {
 
     return (
       <div className="UserPage">
-        <h1>All Dates</h1>
         <div className="DateCard">{dateCard}</div>
       </div>
     );

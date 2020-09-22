@@ -63,11 +63,10 @@ class NewDate extends React.Component {
 
     return (
       <div className="newDate">
-        <h1>NewDate</h1>
-        <h1>Add New Stuff</h1>
+        <h1>I know you have good Ideas. So them add them below.</h1>
         <form className="col-6 offset-3">
           <div className="form-group">
-            <label htmlFor="">title</label>
+            <label htmlFor="">Title</label>
             <input
               type="text"
               className="form-control"
@@ -76,7 +75,7 @@ class NewDate extends React.Component {
               value={title}
               onChange={this.changeTitleEvent}
               />
-              <label htmlFor="">Image</label>
+              <label htmlFor="">Image Url</label>
               <input
                 type="text"
                 className="form-control"

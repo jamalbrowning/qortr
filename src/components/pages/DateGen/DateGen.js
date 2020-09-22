@@ -1,7 +1,9 @@
 import React from 'react';
 
 import dateData from '../../helpers/data/dateData';
-import DateCard from '../DateCards/DateCards';
+import DateCard from '../DateCards/DateCardRandom';
+
+import '../Dates/Dates.scss';
 
 class DateGen extends React.Component {
   state = {
@@ -45,9 +47,8 @@ class DateGen extends React.Component {
 
     return (
       <div className="UserPage">
-        <h1>Here is your super cool date!</h1>
         <div className="DateCard">{dateCard}</div>
-        <button className="btn btn-danger" onClick={this.refreshPage}> yoooo</button>
+        <button className="btn btn-danger new-date" onClick={this.refreshPage}> New Date</button>
       </div>
     );
   }

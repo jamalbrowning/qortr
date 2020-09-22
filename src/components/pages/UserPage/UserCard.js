@@ -6,6 +6,7 @@ import {
 } from 'reactstrap';
 
 import userShape from '../../helpers/props/userShape';
+import './UserPage.scss';
 
 class UserCard extends React.Component {
   static propTypes = {
@@ -17,7 +18,7 @@ class UserCard extends React.Component {
 
     return (
       <div className="userCard">
-      <Card>
+      <Card className="profile-card">
         <CardImg top width="100%" src={ user.profilePic } alt="Card image cap" />
         <CardBody>
           <CardTitle>{user.username}</CardTitle>
