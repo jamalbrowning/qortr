@@ -28,7 +28,6 @@ class Dates extends React.Component {
 
   render() {
     const { dates } = this.state;
-
     const dateCard = dates.map((date) => <DateCard key={date.id} date={date} deleteDate={this.deleteDate}/>);
 
     return (

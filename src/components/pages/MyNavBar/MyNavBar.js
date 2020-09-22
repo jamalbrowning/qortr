@@ -66,6 +66,9 @@ class MyNavbar extends React.Component {
               <NavLink tag={RRNavLink} to="/profile">Profile</NavLink>
             </NavItem>
             <NavItem>
+                  <NavLink tag={RRNavLink} to="/dateGen">Date Gen</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink onClick={this.logMeOut}>Log Out</NavLink>
             </NavItem>
         </Nav>
@@ -76,6 +79,9 @@ class MyNavbar extends React.Component {
       return <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink tag={RRNavLink} to="/Contact">Contact Us</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={RRNavLink} to="/dateGen">Contact Us</NavLink>
                 </NavItem>
                 <button className=" login btn btn-info" onClick={this.loginClickEvent}>Google login</button>
               </Nav>;
