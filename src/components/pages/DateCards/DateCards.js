@@ -40,11 +40,12 @@ class DateCards extends React.Component {
           <span className="line"></span>
           <p className="realFormat">What to do</p>
           <CardText className="description">{date.description}</CardText>
-          <div>
+
+        </CardBody>
+        <div>
           <Link to={editLink} className="btn btn-success m-3"><i className="fas fa-pencil-alt"></i></Link>
           <button className="btn btn-outline-danger m-3" onClick={this.deleteDateEvent}><i className="fas fa-trash-alt"></i></button>
           </div>
-        </CardBody>
       </Card>
     </div>
     );
