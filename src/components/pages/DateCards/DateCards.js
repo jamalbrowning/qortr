@@ -35,10 +35,10 @@ class DateCards extends React.Component {
        <CardTitle className="cardTitle">{date.title}</CardTitle>
        <CardImg top width="100%" src={ date.imgUrl } alt="Card image cap" />
         <CardBody className="cardBody">
-          <p className="realFormat">How to Interact</p>
+          <p className="realFormat">Meeting Enviornment</p>
           <CardText className="format">{date.dateFormat}</CardText>
           <span className="line"></span>
-          <p className="realFormat">What to do</p>
+          <p className="realFormat">How to</p>
           <CardText className="description">{date.description}</CardText>
 
         </CardBody>
