@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle,
 } from 'reactstrap';
 
 import dateShape from '../../helpers/props/dateShape';
@@ -20,7 +19,7 @@ class DateCardRandom extends React.Component {
     return (
       <div className="dateCard" id={ date.dateId }>
       <Card>
-      <CardTitle className="cardTitle">{date.title}</CardTitle>
+      <h4 className="cardTitle">{date.title}</h4>
         <CardImg top width="100%" src={ date.imgUrl } alt="Card image cap" />
         <CardBody className="cardBody">
           <p className="realFormat">Meeting Environment</p>
