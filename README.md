@@ -17,4 +17,11 @@ As an Employee, when you sign in through **Google** you are abel to do the basic
 http://qortr.com
 
 ### Preview
-![Wireframe](/images/Wireframe.png)
+**Wireframe**
+![Wireframe.png ](/images/Wireframe.png)
+
+**UI-Design** I used Adobe XD to design this.
+![UI-Design.gif](/images/Ui-Design.gif)
+
+**ERD**
+![ERD.png](/images/ERD.png)
