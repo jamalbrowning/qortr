@@ -1,4 +1,4 @@
-# qortr.
+## qortr.
 Why would you think of an idea for a date when **qortr** does it for you.
 
 qortr. is a Web app where users can generate a covid friendly dates randomly. It's as simple as that. Click and Date.
@@ -15,3 +15,6 @@ As an Employee, when you sign in through **Google** you are abel to do the basic
 
 ## Deployed Project
 http://qortr.com
+
+### Preview
+![Wireframe](/images/Wireframe.png)
