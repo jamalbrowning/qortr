@@ -16,6 +16,9 @@ As an Employee, when you sign in through **Google** you are abel to do the basic
 ## Deployed Project
 http://qortr.com
 
+## Tech Stack
+React.Js | Firebase | Sass | Bootstrap 
+
 ### Preview
 **Wireframe**
 ![Wireframe.png ](/images/Wireframe.png)
